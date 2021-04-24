@@ -11,7 +11,7 @@ Simple wrapper script around [fileicon](https://github.com/mklement0/fileicon) t
 $ brew install fileicon
 ```
 
-### Install
+### Installation
 ```shell
 $ curl -sSL https://github.com/jonafe/appiconupdate/releases/download/v0.1.0/appiconupdate.sh > /usr/local/bin/appiconupdate && chmod 755 /usr/local/bin/appiconupdate
 ```
