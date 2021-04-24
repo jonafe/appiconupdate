@@ -21,7 +21,7 @@ Create a directory for your app icons and place them in it. Icons work best as .
 $ mkdir /path/to/icons
 ```
 
-**Important: The name of the icon files must match the application name within `/Applications`!**
+**IMPORTANT: The name of the icon files must match the application name within `/Applications`!**
 
 ```shell
 $ ls /path/to/icons
@@ -40,7 +40,7 @@ Optionally you can set the icon path as environment variable
 ```shell
 export ICN_PATH=/path/to/icons
 ```
-or create an alias
+or create an alias.
 ```shell
 alias appiconupdate="appiconupdate /path/to/icons"
 ```
