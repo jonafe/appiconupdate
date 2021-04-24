@@ -1,11 +1,11 @@
 # Appiconupdate
 
-Simple wrapper script around [fileicon](https://github.com/mklement0/fileicon) to update multiple file icons on macOS with one command.
+Simple wrapper script around [fileicon](https://github.com/mklement0/fileicon) to update multiple app icons on macOS with one command.
 
 ## Setup
 
 ### Prerequisites
-[fileicon](https://github.com/mklement0/fileicon) is installed on your system.
+[fileicon](https://github.com/mklement0/fileicon) needs to be installed on your system.
 
 ```shell
 $ brew install fileicon
