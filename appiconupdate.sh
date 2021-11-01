@@ -2,6 +2,7 @@
 
 VERSION="v0.1.0"
 RED=$'\e[1;31m'
+YELLOW=$'\e[1;33m'
 NC=$'\e[0m'
 
 if [[ "$1" == "-v" || "$1" == "--version" ]]; then
@@ -23,7 +24,7 @@ for icn in "$ICN_PATH"/*; do
   app=/Applications/$app_name.app
 
   if [[ ! -d "$app" ]]; then
-    echo "${RED}Error:${NC} $app not found"
+    echo "${YELLOW}Skipping...${NC} $app not found"
     continue
   fi
 
