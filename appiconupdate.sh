@@ -19,6 +19,7 @@ if [[ -z "${ICN_PATH}" ]]; then
   exit 1
 fi
 
+echo "Updating icons..."
 for icn in "$ICN_PATH"/*; do
   app_name=$(basename "$icn" | cut -f 1 -d ".")
   app=/Applications/$app_name.app
