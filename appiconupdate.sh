@@ -10,6 +10,11 @@ if [[ "$1" == "-v" || "$1" == "--version" ]]; then
   exit 0
 fi
 
+if [[ ! -x "$(command -v fileicon)" ]]; then
+  echo "${RED}Error:${NC} fileicon not found"
+  exit 1
+fi
+
 if [[ -n "$1" ]]; then
   ICN_PATH="$1"
 fi
