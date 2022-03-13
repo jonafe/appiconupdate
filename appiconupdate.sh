@@ -25,12 +25,14 @@ if [[ -z "${ICN_PATH}" ]]; then
 fi
 
 echo "Updating icons..."
-for icn in "$ICN_PATH"/*; do
-  app_name=$(basename "$icn" | cut -f 1 -d ".")
-  app=/Applications/$app_name.app
 
-  if [[ ! -d "$app" ]]; then
-    echo "${YELLOW}Skipping...${NC} $app not found"
+for icn in "$ICN_PATH"/*; do
+
+  app_name=$(basename "$icn" | cut -f 1 -d ".")
+  app=$(find /Applications -maxdepth 3 -type d -name "$app_name".app)
+
+  if [[ -z "$app" ]]; then
+    echo "${YELLOW}Skipping...${NC} $app_name not found"
     continue
   fi
 
