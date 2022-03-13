@@ -15,7 +15,7 @@ $ brew install fileicon
 ### Installation
 
 ```shell
-$ curl -sSL https://github.com/jonafll/appiconupdate/releases/download/v0.2.1/appiconupdate.sh > /usr/local/bin/appiconupdate && chmod 755 /usr/local/bin/appiconupdate
+$ curl -sSL https://github.com/jonafll/appiconupdate/releases/download/v0.3/appiconupdate.sh > /usr/local/bin/appiconupdate && chmod 755 /usr/local/bin/appiconupdate
 ```
 
 Create a directory for your app icons and place them in it. Icons work best as .icns or .png files with 512x512 pixels.
